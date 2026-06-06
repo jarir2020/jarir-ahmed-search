@@ -1,5 +1,7 @@
 # search
 
+[![CI](https://github.com/jarir2020/jarir-ahmed-search/actions/workflows/ci.yml/badge.svg)](https://github.com/jarir2020/jarir-ahmed-search/actions/workflows/ci.yml)
+
 A unified, framework-agnostic **search abstraction** for PHP. Write your queries once and run
 them against **Elasticsearch / OpenSearch** in production or a dependency-free **in-memory**
 engine for tests and small datasets — same API, same results shape.
@@ -27,6 +29,9 @@ engine for tests and small datasets — same API, same results shape.
 | Typesense | `Engines\TypesenseEngine` | Needs `query_by` fields. |
 | Database (PDO) | `Engines\DatabaseEngine` | Portable LIKE-based FTS, self-creates its table. |
 | Vector / semantic | `Engines\VectorEngine` | Cosine similarity over caller-supplied embeddings. |
+
+Per-engine setup (transports, credentials, index configuration) is documented in
+[docs/engines.md](docs/engines.md).
 
 ## Requirements
 

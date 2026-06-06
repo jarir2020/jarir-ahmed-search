@@ -1,0 +1,38 @@
+{
+    "name": "jarir-ahmed/search",
+    "description": "A unified, framework-agnostic search abstraction for PHP with Elasticsearch and in-memory engines.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["search", "elasticsearch", "opensearch", "full-text", "fuzzy", "in-memory"],
+    "authors": [
+        {
+            "name": "Jarir Ahmed",
+            "email": "jarircse16@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "ext-curl": "Required by CurlTransport for talking to Elasticsearch/OpenSearch"
+    },
+    "autoload": {
+        "psr-4": {
+            "JarirAhmed\\Search\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JarirAhmed\\Search\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
